@@ -29,6 +29,17 @@
 		.fr{
 			float: right;
 		}
+		.clearfix:after{
+			content: ".";
+			height: 0;
+			line-height: 0;
+			display: block;
+			visibility: hidden;
+			clear: both;
+		}
+		.clearfix{
+			zoom: 1;
+		}
 
 		/* 初始化结束 */
 
@@ -179,7 +190,7 @@
          }
          /* 新闻中间盒子样式结束 */
 
-         /* 新闻又盒子演样式开始 */
+         /* 新闻右盒子演样式开始 */
          .tec{
          	margin: 10px 0 30px 28px;
 
@@ -194,7 +205,38 @@
          	margin-left: 28px;
          	line-height: 1.5;
          }
+         /* 新闻右盒子演样式结束 */
+         .footer{
+         	height: 280px;
+         	background: #bbb;
+         	border-bottom: 1px dashed #414141;
+         	
+         }
+         .footer-con{
+         	width: 800px;
+         	height: 300px;
+         	margin: 0 auto;
+         }
+         dl{
+         	float: left;
+         	margin-top: 20px;
+         	margin-left: 40px;
+         }
+         dt{
+         	color: #000;
+         }
+         dd{
+         	color: #595959;
+         	margin-top: 20px;
+         }
+         .bottom{
+         	background: #aaa;
+         	height: 84px;
+         	text-align: center;
+         	padding-top: 20px;
 
+
+         }
 	</style>
 </head>
 <body>
@@ -218,7 +260,7 @@
 	 		</ul>
 	 		</div>
 	 	</div>
-		 	<!-- 头部样式结束 -->
+		 	<!-- 头部结束 -->
 
 		 	<!-- banner部分开始 -->
 	 	<div class="banner">
@@ -227,38 +269,38 @@
 	 	<!-- banner部分结束 -->
 
 	 	<!-- 信息栏开始 -->
-		 	<div class="mes">
-			 		<div class="mes-con">
-		 			<div class="mes-con-l fl" >最新公告：尚合智能手机入网已经获得审批</div>
-		 			<div class="mes-con-r fr" >
-		 			<img src="img/zone.png" alt="">
-		 			<img src="img/renren.png" alt="">
-		 			<img src="img/weibo.png" alt="">
-		 			<img src="img/xinlang.png" alt="">
-		 		    </div>
-		 		</div>
-		 	</div>
+							<div class="mes">
+							<div class="mes-con">
+							<div class="mes-con-l fl" >最新公告：尚合智能手机入网已经获得审批</div>
+						    <div class="mes-con-r fr" >
+						 <img src="img/zone.png" alt="">
+						 <img src="img/renren.png" alt="">
+						 <img src="img/weibo.png" alt="">
+						 <img src="img/xinlang.png" alt="">
+						 </div>
+						</div>
+			          </div>
 	 	<!-- 信息栏结束 -->
 
 	 	<!-- 新闻部分开始 -->
-	 	<div class="news">
-		 		<!-- 新闻左盒子开始 -->
-		    <div class="news-left fl">
-				<div class="pro">
-				<img src="img/o.jpg" alt="">
-				 				新品发布
-				</div>
-				<div class="pro-pic">
-				  <img src="img/home_hot_01.png" alt="">
-				</div>
-				<div class="pro-sj-l">
-				 <img src="img/left.png" alt="">
-				</div>
-			    <div class="pro-sj-r">
-			    	<img src="img/right.png" alt="">
-				</div>
-				</div>
-				 		<!-- 新闻左盒子结束 -->
+	 	<div class="news clearfix">
+		 	<!-- 新闻左盒子开始 -->
+					    <div class="news-left fl">
+						<div class="pro">
+						<img src="img/o.jpg" alt="">
+						 				新品发布
+						</div>
+						<div class="pro-pic">
+						  <img src="img/home_hot_01.png" alt="">
+						</div>
+						<div class="pro-sj-l">
+						 <img src="img/left.png" alt="">
+						</div>
+					    <div class="pro-sj-r">
+					    	<img src="img/right.png" alt="">
+						</div>
+						</div>
+		    <!-- 新闻左盒子结束 -->
 	 		<!-- 新闻中盒子开始 -->
 		 		<div class="news-cen fl" >
 			 			<div class="pro">
@@ -277,24 +319,51 @@
 	 		<!-- 新闻中盒子结束 -->
 
 	 		<!--  新闻右盒子开始 -->
-	 		<div class="news-right fr">
-	 			<div class="pro">
-				 	<img src="img/o.jpg" alt="">
-			 				技术与支持
-					 </div>
-			<div class="tec">
-				<ul>
-					<li>售后服务</li>
-					<li>投诉与建议</li>
-					<li>联保网点</li>
-					<li>常见问题</li>
-				</ul>
-			</div>
-			<p>深圳市汇聚众合科技发展有限公司<br>
-			   服务热线：400-633-7922</p>
+			 		<div class="news-right fr">
+					 			<div class="pro">
+							 	<img src="img/o.jpg" alt="">
+						 				技术与支持
+								 </div>
+								<div class="tec">
+								<ul>
+								<li>售后服务</li>
+								<li>投诉与建议</li>
+								<li>联保网点</li>
+								<li>常见问题</li>
+							</ul>
+						</div>
+						<p>深圳市汇聚众合科技发展有限公司<br>
+						   服务热线：400-633-7922</p>
 
-	 		</div>
+				 		</div>
+	 		<!-- 新闻右边盒子结束 -->
 	 	</div>
+           <!-- 新闻盒子结束 -->
 
+           <!-- 底部开始 -->
+           <div class="footer">
+           	<div class="footer-con">
+           		<dl>
+           			<dt>尚合首页</dt>
+           			<dd>返回首页</dd>
+           		</dl>
+           		<dl>
+           			<dt>尚合首页</dt>
+           			<dd>返回首页</dd>
+           		</dl>
+           		<dl>
+           			<dt>尚合首页</dt>
+           			<dd>返回首页</dd>
+           		</dl>
+           		<dl>
+           			<dt>尚合首页</dt>
+           			<dd>返回首页</dd>
+           		</dl>
+           	</div>
+           </div>
+           <!-- 底部结束 -->
+           <div class="bottom">
+           	深圳市会局中和优先公司
+           </div>
 </body>
 </html>
