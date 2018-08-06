@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>尚合</title>
+	<style type="text/css">
+	/* 初始化开始 */
+		body,ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,input{
+			margin: 0;
+			padding: 0;
+			font: 12px simsun;
+		}
+		img{
+			border: 0 none;
+		}
+		li{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		input{
+			border: 0 none;
+			outline-style: none;
+		}
+		.fl{
+			float: left;
+		}
+		.fr{
+			float: right;
+		}
+
+		/* 初始化结束 */
+
+		/* 头部样式开始 */
+		.header{
+			width: 980px;
+			height: 39px;
+			margin: 20px auto 0px;
+		}
+		logo{
+			width: 179px;
+			height: 39px;
+		}
+		.search{
+			width: 195px;
+			height: 30px;
+			border: 1px solid #ececec;
+
+		}
+		.search input[type="text"]{
+			width: 160px;
+			height: 30px;
+		}
+		.search input[type="button"]{
+			width:28px;
+			height: 30px;
+			background: url('img/search2.jpg') no-repeat;
+		}
+		.nav{
+			height: 45px;
+			background: url('img/nav_bg.png');
+			border-top:1px solid #efefef;
+		}
+		.nav-con{
+			width: 980px;
+			height: 45px;
+			margin: 0 auto;
+		}
+		.nav .nav-con ul li{
+			height: 45px;
+			float: left;
+
+		}
+       .nav .nav-con ul li a{
+        	display: inline-block;
+        	height: 45px;
+        	font: 700 12px/45px 微软雅黑;
+        	color: #000;
+        	padding:0 30px;
+        	background:url("img/nav_bg-line.png") no-repeat right;
+        }
+        .nav .nav-con ul li a:hover{
+        	color: #7cb609;
+        }
+        /* 头部样式结束 */
+        .banner{
+        	width: 980px;
+        	height: 597px;
+        	margin: 0 auto;
+        }
+        /* 信息栏样式开始 */
+        .mes{
+        	height: 32px;
+        	background: #eee;
+        	border-top: 1px solid #ddd;
+        	border-bottom: 1px solid #ddd;
+        	margin-bottom: 15px;
+        }
+        .mes-con{
+        	width: 980px;
+        	height: 32px;
+            margin: 0 auto;
+        }
+        .mes-con-l{
+        	height: 32px;
+        	line-height: 32px;
+
+        }
+        .mes-con-r{
+        	height: 16px;
+        	margin-top: 8px;
+        }
+        /* 信息栏样式结束 */
+
+        /* 新闻部分样式开始 */
+        .news{
+        	width: 980px;
+        	margin: 0 auto;
+        }
+        .news-left,.news-cen,.news-right{
+        	border: 1px solid #e4e4e4;
+        }
+        .news-left{
+        	width: 310px;
+        	height: 224px;
+        	position: relative;
+        }
+        .news-cen{
+        	width: 373px;
+        	height: 224px;
+        	margin-left:10px;
+        }
+        .news-right{
+        	width: 268px;
+        	height: 224px;
+        }
+        /* 新闻左盒子样式开始 */
+        .pro{
+        	margin: 14px 0 0 6px;
+        	color: #7ab800;
+        }
+        .pro img{
+        	vertical-align: middle;
+        	/* 图片和文字居中对齐 */
+        }
+        .pro-pic{
+        	position: absolute;
+        	left: 55px;
+        	top: 45px;
+        }
+        .pro-sj-l{
+        	position: absolute;
+        	left: 23px;
+        	bottom:90px;
+        }
+        .pro-sj-r{
+        	position: absolute;
+        	right: 23px;
+        	bottom:90px;
+        }
+        /* 新闻左盒子样式结束 */
+        /* 新闻中间盒子样式开始 */
+        .new-cen ul{
+        	margin: 10px 17px 0;
+        }
+        .news-cen ul li{
+        	height: 27px;
+        	line-height: 27px;
+        	border-bottom: 1px dashed #dcdcdc;
+
+        }
+        .news-cen ul li a{
+        	color: #000;
+        }
+         .news-cen ul li a.sorry{
+         	color: #ff0000;
+         	font-weight: 700;
+         }
+         /* 新闻中间盒子样式结束 */
+
+         /* 新闻又盒子演样式开始 */
+         .tec{
+         	margin: 10px 0 30px 28px;
+
+         }
+         .tec li{
+         	border-left:2px solid #7ab800;
+         	margin-top: 10px;
+         	line-height: 12px;
+         	padding-left: 5px;
+         }
+         .news-right p{
+         	margin-left: 28px;
+         	line-height: 1.5;
+         }
+
+	</style>
+</head>
+<body>
+	<!-- 头部部分开始 -->
+	<div class="header">
+		<div class="logo fl"><img src="img/logo.jpg" alt=""></div>
+		<div class="search fr">
+			<input type="text"  value="请输入....">
+			<input type="button">
+		</div>
+	</div>
+	 	<div class="nav">
+	 		<div class="nav-con">
+	 		<ul>
+	 			<li><a href="#">首页</a></li>
+	 			<li><a href="#">智能手表</a></li>
+	 			<li><a href="#">平板电脑</a></li>
+	 			<li><a href="#">配件</a></li>
+	 			<li><a href="#">服务支持</a></li>
+	 			<li><a href="#">关于尚合</a></li>
+	 		</ul>
+	 		</div>
+	 	</div>
+		 	<!-- 头部样式结束 -->
+
+		 	<!-- banner部分开始 -->
+	 	<div class="banner">
+	 		<img src="img/banner.jpg" alt="">
+	 		</div>
+	 	<!-- banner部分结束 -->
+
+	 	<!-- 信息栏开始 -->
+		 	<div class="mes">
+			 		<div class="mes-con">
+		 			<div class="mes-con-l fl" >最新公告：尚合智能手机入网已经获得审批</div>
+		 			<div class="mes-con-r fr" >
+		 			<img src="img/zone.png" alt="">
+		 			<img src="img/renren.png" alt="">
+		 			<img src="img/weibo.png" alt="">
+		 			<img src="img/xinlang.png" alt="">
+		 		    </div>
+		 		</div>
+		 	</div>
+	 	<!-- 信息栏结束 -->
+
+	 	<!-- 新闻部分开始 -->
+	 	<div class="news">
+		 		<!-- 新闻左盒子开始 -->
+		    <div class="news-left fl">
+				<div class="pro">
+				<img src="img/o.jpg" alt="">
+				 				新品发布
+				</div>
+				<div class="pro-pic">
+				  <img src="img/home_hot_01.png" alt="">
+				</div>
+				<div class="pro-sj-l">
+				 <img src="img/left.png" alt="">
+				</div>
+			    <div class="pro-sj-r">
+			    	<img src="img/right.png" alt="">
+				</div>
+				</div>
+				 		<!-- 新闻左盒子结束 -->
+	 		<!-- 新闻中盒子开始 -->
+		 		<div class="news-cen fl" >
+			 			<div class="pro">
+				 		<img src="img/o.jpg" alt="">
+			 				新闻中心
+					 </div>
+					 <ul>
+					 	<li><a href="#" class="sorry">致歉公告</a></li>
+					 	<li><a href="#">首批尚合手机Aonet售罄</a></li>
+					 	<li><a href="#">【媒体播报】国产搞性价比</a></li>
+					 	<li><a href="#">我们的产品已通过检测</a></li>
+					 	<li><a href="#">尚合只能手机入网已获得批准</a></li>
+					 	<li><a href="#">我司通过国际质量体系认证</a></li>
+					 </ul>
+		 		</div>
+	 		<!-- 新闻中盒子结束 -->
+
+	 		<!--  新闻右盒子开始 -->
+	 		<div class="news-right fr">
+	 			<div class="pro">
+				 	<img src="img/o.jpg" alt="">
+			 				技术与支持
+					 </div>
+			<div class="tec">
+				<ul>
+					<li>售后服务</li>
+					<li>投诉与建议</li>
+					<li>联保网点</li>
+					<li>常见问题</li>
+				</ul>
+			</div>
+			<p>深圳市汇聚众合科技发展有限公司<br>
+			   服务热线：400-633-7922</p>
+
+	 		</div>
+	 	</div>
+
+</body>
+</html>
